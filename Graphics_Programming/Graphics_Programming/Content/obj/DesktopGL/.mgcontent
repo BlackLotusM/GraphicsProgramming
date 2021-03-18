@@ -25,6 +25,7 @@
     <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/night.jpg</File>
     <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/NormalMap.png</File>
     <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/plant.png</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/PostFXLive.fx</File>
     <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/rock.jpg</File>
     <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/sky_cube.dds</File>
     <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/snow.jpg</File>
@@ -34,6 +35,7 @@
     <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/waternormal.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
