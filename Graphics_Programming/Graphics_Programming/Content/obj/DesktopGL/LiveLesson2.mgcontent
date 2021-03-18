@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>E:/repos/Graphics_Programming/Graphics_Programming/Content/LiveLesson2.fx</SourceFile>
+  <SourceTime>2021-03-18T10:43:32.9936839+01:00</SourceTime>
+  <DestFile>E:/repos/Graphics_Programming/Graphics_Programming/Content/bin/DesktopGL/LiveLesson2.xnb</DestFile>
+  <DestTime>2021-03-18T15:35:52.2808952+01:00</DestTime>
+  <Importer>EffectImporter</Importer>
+  <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
+  <Processor>EffectProcessor</Processor>
+  <ProcessorTime>2020-08-10T16:17:54+02:00</ProcessorTime>
+  <Parameters>
+    <Key>DebugMode</Key>
+    <Value>Auto</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

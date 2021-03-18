@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/2k_moon.jpg</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/base.png</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/clouds.jpg</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/cube.obj</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/day.jpg</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/dirt_diff.jpg</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/File.spritefont</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/grass.jpg</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/heightmap.jpg</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/HomeWork2.fx</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/HomeWork3.fx</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/HomeWork56.fx</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/LiveLesson2.fx</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/LiveLesson3.fx</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/LiveLesson4.fx</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/LiveLesson5.fx</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/LiveLesson6.fx</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/mars.jpg</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/night.jpg</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/NormalMap.png</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/plant.png</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/rock.jpg</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/sky_cube.dds</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/snow.jpg</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/Snowman_COL.FBX</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/uv_sphere.fbx</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/water.jpg</File>
+    <File>E:/repos/Graphics_Programming/Graphics_Programming/Content/waternormal.jpg</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
