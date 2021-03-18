@@ -5,8 +5,8 @@
 #Visual Studio files
 *.pidb
 *.userprefs
-*.[Oo]bj
 *.exe
+*.xnb
 *.pdb
 *.user
 *.aps
@@ -27,8 +27,6 @@
 *.sbr
 *.sdf
 ipch/
-obj/
-[Bb]in
 [Dd]ebug*/
 [Rr]elease*/
 Ankh.NoLoad
