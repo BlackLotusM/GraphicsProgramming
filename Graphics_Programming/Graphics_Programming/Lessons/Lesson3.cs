@@ -11,12 +11,12 @@ namespace GraphicsProgramming.Lessons
 {
     class Lesson3 : Lesson
     {
-        Model sphere, Cube;
+        Model sphere, cube;
         Texture2D day, night, clouds, moon;
         TextureCube sky;
 
         private Effect myEffect;
-        Vector3 LightPosition = Vector3.Right * 2 + Vector3.Up * 2 + Vector3.Backward * 2;
+        Vector3 lightPosition = Vector3.Right * 2 + Vector3.Up * 2 + Vector3.Backward * 2;
 
         float scrol = 40;
         float yaw, pitch;
@@ -51,9 +51,9 @@ namespace GraphicsProgramming.Lessons
             moon = Content.Load<Texture2D>("2k_moon");
             sky = Content.Load<TextureCube>("sky_cube");
 
-            Sphere = Content.Load<Model>("uv_sphere");
+            sphere = Content.Load<Model>("uv_sphere");
 
-            foreach (ModelMesh mesh in Sphere.Meshes)
+            foreach (ModelMesh mesh in sphere.Meshes)
             {
                 foreach (ModelMeshPart meshPart in mesh.MeshParts)
                 {
@@ -61,9 +61,9 @@ namespace GraphicsProgramming.Lessons
                 }
             }
 
-            Cube = Content.Load<Model>("cube");
+            cube = Content.Load<Model>("cube");
 
-            foreach (ModelMesh mesh2 in Cube.Meshes)
+            foreach (ModelMesh mesh2 in cube.Meshes)
             {
                 foreach (ModelMeshPart meshPart in mesh2.MeshParts)
                 {
@@ -79,7 +79,7 @@ namespace GraphicsProgramming.Lessons
 
             float time = (float)gameTime.TotalGameTime.TotalSeconds;
             //LightPosition = new Vector3(MathF.Cos(time), 0, MathF.Sin(time)) * 200;
-            LightPosition = Vector3.Left * 200;
+            lightPosition = Vector3.Left * 200;
 
             Vector3 cameraPos = -Vector3.Forward * scrol / 100;// + Vector3.Up * 5;
             cameraPos = Vector3.Transform(cameraPos, Quaternion.CreateFromYawPitchRoll(yaw, pitch, 0));
@@ -92,7 +92,7 @@ namespace GraphicsProgramming.Lessons
             myEffect.Parameters["Projection"].SetValue(Matrix.CreatePerspectiveFieldOfView((MathF.PI / 180f) * 25f, device.Viewport.AspectRatio, 0.001f, 1000f));
 
             myEffect.Parameters["Time"].SetValue(time);
-            myEffect.Parameters["LightPosition"].SetValue(LightPosition);
+            myEffect.Parameters["LightPosition"].SetValue(lightPosition);
             myEffect.Parameters["CameraPosition"].SetValue(cameraPos);
 
             myEffect.Parameters["DayTex"].SetValue(day);
@@ -107,15 +107,15 @@ namespace GraphicsProgramming.Lessons
             myEffect.CurrentTechnique = myEffect.Techniques["Sky"];
             device.DepthStencilState = DepthStencilState.None;
             device.RasterizerState = RasterizerState.CullNone;
-            RenderModel(Cube, Matrix.CreateTranslation(cameraPos));
+            RenderModel(cube, Matrix.CreateTranslation(cameraPos));
 
             device.RasterizerState = RasterizerState.CullCounterClockwise;
             device.DepthStencilState = DepthStencilState.Default;
 
             myEffect.CurrentTechnique = myEffect.Techniques["Earth"];
-            RenderModel(Sphere, World * Matrix.CreateScale(0.01f) * Matrix.CreateRotationZ(time / 4) * Matrix.CreateRotationY(MathF.PI / 180 * 23) * World);
+            RenderModel(sphere, World * Matrix.CreateScale(0.01f) * Matrix.CreateRotationZ(time / 4) * Matrix.CreateRotationY(MathF.PI / 180 * 23) * World);
             myEffect.CurrentTechnique = myEffect.Techniques["Moon"];
-            RenderModel(Sphere, Matrix.CreateTranslation(Vector3.Down * 8) * Matrix.CreateScale(0.0033f) * Matrix.CreateRotationZ(time) * World);
+            RenderModel(sphere, Matrix.CreateTranslation(Vector3.Down * 8) * Matrix.CreateScale(0.0033f) * Matrix.CreateRotationZ(time) * World);
         }
 
         void RenderModel(Model m, Matrix parentMatrix)

@@ -13,18 +13,16 @@ namespace GraphicsProgramming
 	{
 
 		private Effect effect;
-		private Texture2D heightmap, dirt, snow, grass, rock, water, plant, dirt_norm, dirt_spec, foam, waterNormal;
-		private TextureCube sky;
+		private Texture2D heightmap, dirt, snow, grass, rock, water, plant;
 		private Model cube, sphere;
 
-		[StructLayout(LayoutKind.Sequential, Pack = 1)]
 		public struct Vert : IVertexType
 		{
-			public Vector3 Position;
-			public Vector3 Normal;
-			public Vector3 Binormal;
-			public Vector3 Tangent;
-			public Vector2 Texture;
+			public Vector3 position;
+			public Vector3 normal;
+			public Vector3 binormal;
+			public Vector3 tangent;
+			public Vector2 texture;
 
 			static readonly VertexDeclaration _vertexDeclaration = new VertexDeclaration
 			(
@@ -38,13 +36,13 @@ namespace GraphicsProgramming
 			VertexDeclaration IVertexType.VertexDeclaration => _vertexDeclaration;
 
 
-			public Vert(Vector3 position, Vector3 normal, Vector3 binormal, Vector3 tangent, Vector2 texture)
+			public Vert(Vector3 Position, Vector3 Normal, Vector3 Binormal, Vector3 Tangent, Vector2 Texture)
 			{
-				Position = position;
-				Normal = normal;
-				Binormal = binormal;
-				Tangent = tangent;
-				Texture = texture;
+				position = Position;
+				normal = Normal;
+				binormal = Binormal;
+				tangent = Tangent;
+				texture = Texture;
 			}
 		}
 
@@ -155,10 +153,10 @@ namespace GraphicsProgramming
 					int right = y * heightmap.Width + x + 1;
 					int bottom = (y + 1) * heightmap.Width + x;
 
-					Vector3 vr = Vector3.Normalize(vertices[right].Position - vertices[index].Position);
-					Vector3 vd = Vector3.Normalize(vertices[bottom].Position - vertices[index].Position);
+					Vector3 vr = Vector3.Normalize(vertices[right].position - vertices[index].position);
+					Vector3 vd = Vector3.Normalize(vertices[bottom].position - vertices[index].position);
 
-					vertices[index].Normal = Vector3.Cross(vr, vd);
+					vertices[index].normal = Vector3.Cross(vr, vd);
 
 				}
 			}

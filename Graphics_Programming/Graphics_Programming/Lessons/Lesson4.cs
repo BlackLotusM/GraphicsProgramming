@@ -11,13 +11,10 @@ namespace GraphicsProgramming
 {
 	class Lesson4 : Lesson
 	{
-
 		private Effect effect;
-		private Texture2D heightmap, dirt, dirt_norm, dirt_spec, water, foam, waterNormal;
-		private TextureCube sky;
+		private Texture2D heightmap, dirt;
 		private Model cube;
 
-		[StructLayout(LayoutKind.Sequential, Pack = 1)]
 		public struct Vert : IVertexType
 		{
 			public Vector3 Position;

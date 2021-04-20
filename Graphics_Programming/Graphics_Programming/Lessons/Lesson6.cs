@@ -19,11 +19,11 @@ namespace GraphicsProgramming
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
         public struct Vert : IVertexType
         {
-            public Vector3 Position;
-            public Vector3 Normal;
-            public Vector3 Binormal;
-            public Vector3 Tangent;
-            public Vector2 Texture;
+            public Vector3 position;
+            public Vector3 normal;
+            public Vector3 binormal;
+            public Vector3 tangent;
+            public Vector2 texture;
             static readonly VertexDeclaration _vertexDeclaration =
                 new VertexDeclaration(new VertexElement(0, VertexElementFormat.Vector3, VertexElementUsage.Position, 0),
                     new VertexElement(12, VertexElementFormat.Vector3, VertexElementUsage.Normal, 0),
@@ -32,13 +32,13 @@ namespace GraphicsProgramming
                     new VertexElement(48, VertexElementFormat.Vector2, VertexElementUsage.TextureCoordinate, 0));
             VertexDeclaration IVertexType.VertexDeclaration =>
                 _vertexDeclaration;
-            public Vert(Vector3 position, Vector3 normal, Vector3 binormal, Vector3 tangent, Vector2 texture)
+            public Vert(Vector3 Position, Vector3 Normal, Vector3 Binormal, Vector3 Tangent, Vector2 Texture)
             {
-                Position = position;
-                Normal = normal;
-                Binormal = binormal;
-                Tangent = tangent;
-                Texture = texture;
+                position = Position;
+                normal = Normal;
+                binormal = Binormal;
+                tangent = Tangent;
+                texture = Texture;
             }
         }
 
@@ -180,11 +180,11 @@ namespace GraphicsProgramming
                     int bottom = (y + 1) * heightmap.Width + x;                 // index + width
 
                     // vector pointing right
-                    Vector3 vr = Vector3.Normalize(vertices[right].Position - vertices[index].Position);
+                    Vector3 vr = Vector3.Normalize(vertices[right].position - vertices[index].position);
                     // vector pointing down
-                    Vector3 vd = Vector3.Normalize(vertices[bottom].Position - vertices[index].Position);
+                    Vector3 vd = Vector3.Normalize(vertices[bottom].position - vertices[index].position);
 
-                    vertices[index].Normal = Vector3.Cross(vr, vd);
+                    vertices[index].normal = Vector3.Cross(vr, vd);
                 }
             }
         }
@@ -308,9 +308,6 @@ namespace GraphicsProgramming
             RenderModel(sphere, World * Matrix.CreateTranslation(Vector3.Right * 800 - Vector3.Forward * 2000 + Vector3.Up * 300));
 
             // Render Outside
-            //device.RasterizerState = RasterizerState.CullCounterClockwise;
-            //RenderModel(sphere, World * Matrix.CreateTranslation(Vector3.Right * 800 - Vector3.Forward * 2000 + Vector3.Up * 300));
-
             device.RasterizerState = RasterizerState.CullCounterClockwise;
             device.BlendState = BlendState.Opaque;
 

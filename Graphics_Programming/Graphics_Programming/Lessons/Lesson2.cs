@@ -11,7 +11,7 @@ namespace GraphicsProgramming
 	class Lesson2 : Lesson
 	{
 		private Effect ef;
-		private Texture2D Texture, Normal;
+		private Texture2D texture, normal;
 
 		[StructLayout(LayoutKind.Sequential, Pack = 1)]
 		public struct VertexPositionColorNormal : IVertexType
@@ -121,8 +121,8 @@ namespace GraphicsProgramming
 		public override void LoadContent(ContentManager Content, GraphicsDeviceManager graphics, SpriteBatch spriteBatch)
 		{
 			ef = Content.Load<Effect>("LiveLesson2");
-			Texture = Content.Load<Texture2D>("base");
-			Normal = Content.Load<Texture2D>("NormalMap");
+			texture = Content.Load<Texture2D>("base");
+			normal = Content.Load<Texture2D>("NormalMap");
 		}
 
 		public override void Draw(GameTime gameTime, GraphicsDeviceManager graphics, SpriteBatch spriteBatch)
@@ -140,8 +140,8 @@ namespace GraphicsProgramming
 			ef.Parameters["View"].SetValue(View);
 			ef.Parameters["Projection"].SetValue(Matrix.CreatePerspectiveFieldOfView((MathF.PI / 180f) * 25f, device.Viewport.AspectRatio, 0.001f, 1000f));
 
-			ef.Parameters["MainTex"].SetValue(Texture);
-			ef.Parameters["NormalTex"].SetValue(Normal);
+			ef.Parameters["MainTex"].SetValue(texture);
+			ef.Parameters["NormalTex"].SetValue(normal);
 
             ef.Parameters["LightR"].SetValue(1.5f);
             ef.Parameters["LightG"].SetValue(1.5f);
