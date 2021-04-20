@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>E:/repos/Graphics_Programming/Graphics_Programming/Content/NormalMap.png</SourceFile>
+  <SourceFile>E:/School/Github/GraphicsProgramming/Graphics_Programming/Graphics_Programming/Content/NormalMap.png</SourceFile>
   <SourceTime>2021-03-18T10:39:28.4908677+01:00</SourceTime>
-  <DestFile>E:/repos/Graphics_Programming/Graphics_Programming/Content/bin/DesktopGL/Content/NormalMap.xnb</DestFile>
-  <DestTime>2021-03-18T10:39:37.3026365+01:00</DestTime>
+  <DestFile>E:/School/Github/GraphicsProgramming/Graphics_Programming/Graphics_Programming/Content/bin/DesktopGL/Content/NormalMap.xnb</DestFile>
+  <DestTime>2021-04-18T21:14:17.8489155+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

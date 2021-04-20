@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>E:/repos/Graphics_Programming/Graphics_Programming/Content/HomeWork3.fx</SourceFile>
+  <SourceFile>E:/School/Github/GraphicsProgramming/Graphics_Programming/Graphics_Programming/Content/HomeWork3.fx</SourceFile>
   <SourceTime>2021-03-18T13:06:29.8672062+01:00</SourceTime>
-  <DestFile>E:/repos/Graphics_Programming/Graphics_Programming/Content/bin/DesktopGL/Content/HomeWork3.xnb</DestFile>
-  <DestTime>2021-03-18T13:07:36.6559024+01:00</DestTime>
+  <DestFile>E:/School/Github/GraphicsProgramming/Graphics_Programming/Graphics_Programming/Content/bin/DesktopGL/Content/HomeWork3.xnb</DestFile>
+  <DestTime>2021-04-18T21:14:14.1789249+02:00</DestTime>
   <Importer>EffectImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>EffectProcessor</Processor>

@@ -11,7 +11,7 @@ namespace GraphicsProgramming.Lessons
 {
     class Lesson3 : Lesson
     {
-        Model Sphere, Cube;
+        Model sphere, Cube;
         Texture2D day, night, clouds, moon;
         TextureCube sky;
 

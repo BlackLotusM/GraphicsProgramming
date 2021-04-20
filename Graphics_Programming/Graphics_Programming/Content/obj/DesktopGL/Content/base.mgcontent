@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>E:/repos/Graphics_Programming/Graphics_Programming/Content/base.png</SourceFile>
+  <SourceFile>E:/School/Github/GraphicsProgramming/Graphics_Programming/Graphics_Programming/Content/base.png</SourceFile>
   <SourceTime>2021-03-18T10:20:20.2209288+01:00</SourceTime>
-  <DestFile>E:/repos/Graphics_Programming/Graphics_Programming/Content/bin/DesktopGL/Content/base.xnb</DestFile>
-  <DestTime>2021-03-18T10:37:11.1376053+01:00</DestTime>
+  <DestFile>E:/School/Github/GraphicsProgramming/Graphics_Programming/Graphics_Programming/Content/bin/DesktopGL/Content/base.xnb</DestFile>
+  <DestTime>2021-04-18T21:14:12.2112577+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

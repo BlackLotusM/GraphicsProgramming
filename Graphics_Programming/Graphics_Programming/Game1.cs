@@ -17,7 +17,7 @@ namespace GraphicsProgramming
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
-            selectedProject = new Lesson_5_6_Homework();
+            selectedProject = new Lesson_2_Homework();
         }
 
         protected override void Initialize()

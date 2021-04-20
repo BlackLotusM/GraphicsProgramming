@@ -64,8 +64,6 @@ namespace GraphicsProgramming.Lessons
 			device.Clear(Color.BlanchedAlmond);
 			effect.VertexColorEnabled = true;
 			effect.CurrentTechnique.Passes[0].Apply();
-			
-
 
 			effect.World = Matrix.Identity * Matrix.CreateRotationX((float)gameTime.TotalGameTime.TotalSeconds) * Matrix.CreateRotationY((float)gameTime.TotalGameTime.TotalSeconds);
 			effect.View = Matrix.CreateLookAt(-Vector3.Forward * 2, Vector3.Zero, Vector3.Up);
@@ -75,7 +73,6 @@ namespace GraphicsProgramming.Lessons
 			foreach (EffectPass pass in effect.CurrentTechnique.Passes)
 			{
 				pass.Apply();
-				
 				device.DrawUserIndexedPrimitives(PrimitiveType.TriangleList, vertices, 0, vertices.Length, indices, 0, indices.Length / 3);
 			}
 		}

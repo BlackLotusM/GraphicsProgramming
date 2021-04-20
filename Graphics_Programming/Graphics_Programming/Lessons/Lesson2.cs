@@ -13,11 +13,9 @@ namespace GraphicsProgramming
 		private Effect ef;
 		private Texture2D Texture, Normal;
 
-
 		[StructLayout(LayoutKind.Sequential, Pack = 1)]
 		public struct VertexPositionColorNormal : IVertexType
 		{
-			
 			public Vector3 Position;
 			public Color Color;
 			public Vector3 Normal;
@@ -132,7 +130,6 @@ namespace GraphicsProgramming
 			GraphicsDevice device = graphics.GraphicsDevice;
 
 			float time = (float)gameTime.TotalGameTime.TotalSeconds;
-			//LightPosition = new Vector3(MathF.Cos(time), MathF.Sin(time), MathF.Sin(time)) * 5;
 			LightPosition = new Vector3(MathF.Cos(time), 2, MathF.Sin(time)) * 5;
 			Vector3 cameraPos = -Vector3.Forward * 10 + Vector3.Up * 5 + Vector3.Right * 5;
 
@@ -145,10 +142,6 @@ namespace GraphicsProgramming
 
 			ef.Parameters["MainTex"].SetValue(Texture);
 			ef.Parameters["NormalTex"].SetValue(Normal);
-
-            //ef.Parameters["LightR"].SetValue(MathF.Sin(time) * 1.5f);
-            //ef.Parameters["LightG"].SetValue(MathF.Cos(time) * 1.5f);
-            //ef.Parameters["LightB"].SetValue(MathF.Sin(time) * 1.5f);
 
             ef.Parameters["LightR"].SetValue(1.5f);
             ef.Parameters["LightG"].SetValue(1.5f);

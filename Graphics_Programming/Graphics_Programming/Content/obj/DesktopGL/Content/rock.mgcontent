@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>E:/repos/Graphics_Programming/Graphics_Programming/Content/rock.jpg</SourceFile>
+  <SourceFile>E:/School/Github/GraphicsProgramming/Graphics_Programming/Graphics_Programming/Content/rock.jpg</SourceFile>
   <SourceTime>2021-03-04T15:39:54.4460139+01:00</SourceTime>
-  <DestFile>E:/repos/Graphics_Programming/Graphics_Programming/Content/bin/DesktopGL/Content/rock.xnb</DestFile>
-  <DestTime>2021-03-14T02:06:41.0807013+01:00</DestTime>
+  <DestFile>E:/School/Github/GraphicsProgramming/Graphics_Programming/Graphics_Programming/Content/bin/DesktopGL/Content/rock.xnb</DestFile>
+  <DestTime>2021-04-18T21:14:18.6386326+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
